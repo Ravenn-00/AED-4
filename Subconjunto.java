@@ -6,6 +6,13 @@ public class Subconjunto {
             subArray[i - 1] = arr[i];
             System.out.print(subArray[i - 1] + " ");
         }
+        if()
+    }
+    public static boolean esPoder2(int x) {
+        while(x % 2 == 0) {
+            x /= 2;
+        }
+        return false;
     }
     public static void main(String[] args) {
         int[] array1 = {5, 2, 4, 8, 10, 3, 14};
