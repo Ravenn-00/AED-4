@@ -16,10 +16,10 @@ public class Subconjunto {
             }            
         }
         if(suma == sumaEsperada) {
-            System.out.print("True");
+            System.out.print("True\n");
         }
         else {
-            System.out.print("False");
+            System.out.print("False\n");
         }
     }
     public static boolean esImpar(int x) {
@@ -41,7 +41,7 @@ public class Subconjunto {
         while(x % 2 == 0) {
             x /= 2;
         }
-        return true;
+        return x == 1;
     }
     public static void main(String[] args) {
         int[] array1 = {5, 2, 4, 8, 10, 3, 14};
