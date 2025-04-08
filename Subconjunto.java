@@ -8,22 +8,31 @@ public class Subconjunto {
         }
         int sumaEsperada = 0;
         for(int i = 0; i < subArray.length; i++) {
-            if(esPoder2(i)) {
-                sumaEsperada += i;
+            if(esPoder2(subArray[i])) {
+                sumaEsperada += subArray[i];
             }
-            if(esMult5(i))
-            
+            if(esMult5(subArray[i]) && !esImpar(subArray[i + 1])) {
+                sumaEsperada += i;
+            }            
+        }
+        if(suma == sumaEsperada) {
+            System.out.print("True");
+        }
+        else {
+            System.out.print("False");
         }
     }
-    public static boolean esMult5(int x) {
-        
+    public static boolean esImpar(int x) {
+        if(x % 2 == 0) {
+            return false;
+        }
+        return true;
     }
     public static boolean esMult5(int x) {
         if(x % 5 == 0) {
             return true;
         }
         return false;
-
     }
     public static boolean esPoder2(int x) {
         if(x <= 0) {
