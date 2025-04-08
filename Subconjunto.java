@@ -11,9 +11,11 @@ public class Subconjunto {
             if(esPoder2(subArray[i])) {
                 sumaEsperada += subArray[i];
             }
-            if(esMult5(subArray[i]) && !esImpar(subArray[i + 1])) {
-                sumaEsperada += i;
-            }            
+            if(subArray[i + 1] < subArray.length) {
+                if(esMult5(subArray[i]) && !esImpar(subArray[i + 1])) {
+                    sumaEsperada += i;                
+                }
+            }
         }
         if(suma == sumaEsperada) {
             System.out.print("True\n");
@@ -46,6 +48,14 @@ public class Subconjunto {
     public static void main(String[] args) {
         int[] array1 = {5, 2, 4, 8, 10, 3, 14};
         Subconjunto.comprobar(array1);
+        int[] array2 = {5, 4, 8, 10, 3, 5, 27};
+        Subconjunto.comprobar(array2);
+        int[] array3 = {6, 2, 16, 5, 7, 10, 33};
+        Subconjunto.comprobar(array3);
+        int[] array4 = {6, 2, 16, 5, 3, 10, 33};
+        Subconjunto.comprobar(array4);
+        int[] array5 = {4, 2, 5, 1, 6, 13};
+        Subconjunto.comprobar(array5);
     }
     
 }
