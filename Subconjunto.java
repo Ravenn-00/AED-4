@@ -11,7 +11,7 @@ public class Subconjunto {
             if(esPoder2(subArray[i])) {
                 sumaEsperada += subArray[i];
             }
-            if(subArray[i + 1] < subArray.length) {
+            if(i + 1 < subArray.length) {
                 if(esMult5(subArray[i]) && !esImpar(subArray[i + 1])) {
                     sumaEsperada += i;                
                 }
