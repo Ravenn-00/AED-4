@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Arreglo {
+public class Arreglo {
     public static void search(int[] arr, int x) {
         printArray(arr, x);
         int[] sorted = arr.clone();
