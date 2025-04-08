@@ -6,13 +6,33 @@ public class Subconjunto {
             subArray[i - 1] = arr[i];
             System.out.print(subArray[i - 1] + " ");
         }
-        if()
+        int sumaEsperada = 0;
+        for(int i = 0; i < subArray.length; i++) {
+            if(esPoder2(i)) {
+                sumaEsperada += i;
+            }
+            if(esMult5(i))
+            
+        }
+    }
+    public static boolean esMult5(int x) {
+        
+    }
+    public static boolean esMult5(int x) {
+        if(x % 5 == 0) {
+            return true;
+        }
+        return false;
+
     }
     public static boolean esPoder2(int x) {
+        if(x <= 0) {
+            return false;
+        }
         while(x % 2 == 0) {
             x /= 2;
         }
-        return false;
+        return true;
     }
     public static void main(String[] args) {
         int[] array1 = {5, 2, 4, 8, 10, 3, 14};
