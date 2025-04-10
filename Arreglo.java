@@ -3,31 +3,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Arreglo {
-    public static void search(int[] arr, int x) {
-        printArray(arr, x);
-        int[] sorted = arr.clone();
-        Arrays.sort(sorted);
-        if(x == 1) {
-            System.out.print("\nElemento: " + sorted[0]);
-            return;
-        }
-        if(x == arr.length) {
-            System.out.print("\nElemento: " + sorted[x]);
-            return;
-        }
-        else {
-            System.out.print("\nElemento: " + sorted[x - 1]);
-        }
-    }
-    public static void quickSearch() {
+    public static void search(int[] arr, int k) {
         
     }
-    public static void printArray(int[] arr, int x) {
-        System.out.print("\nArray: ");
-        for (int i : arr) {
-            System.out.print(i + "  ");
-        }
-        System.out.print("\nPosicion: " + x);
+    public static void partir() {
+
     }
     
     public static void main(String[] args) {
