@@ -3,8 +3,12 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Arreglo {
-    public static void search(int[] arr, int k) {
-        
+    public static int search(int[] arr, int k, int inicio, int fin) {
+        if(inicio == fin) return arr[inicio];
+        int pivote = inicio - fin + 1;
+        if(k == pivote) return arr[k];
+        else if(k < pivote) return search(arr, k, inicio, pivote - 1);
+        else return search(arr, k, pivote + 1, fin);
     }
     public static void partir() {
 
