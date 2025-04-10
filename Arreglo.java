@@ -1,5 +1,6 @@
 // EJERCICIO 1
 import java.util.Arrays;
+import java.util.Random;
 
 public class Arreglo {
     public static void search(int[] arr, int x) {
@@ -17,6 +18,9 @@ public class Arreglo {
         else {
             System.out.print("\nElemento: " + sorted[x - 1]);
         }
+    }
+    public static void quickSearch() {
+        
     }
     public static void printArray(int[] arr, int x) {
         System.out.print("\nArray: ");
